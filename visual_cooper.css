@@ -127,10 +127,8 @@ img:hover {
   }
 
   img {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin: 0 auto;
     float: none;
-    align-text: center;
     max-width: 70%;
   }
 
