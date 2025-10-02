@@ -4,15 +4,15 @@ document.addEventListener("DOMContentLoaded", () => {
   img.addEventListener("mouseover", () => {
     img.style.opacity = "0"; // делаем прозрачным
     setTimeout(() => {
-      img.src = "говард.png";
+      img.src = "images/говард.png";
       img.style.opacity = "1"; // плавно возвращаем
-    }, 300); // задержка меньше transition для синхронности
+    }, 300);
   });
 
   img.addEventListener("mouseout", () => {
     img.style.opacity = "0";
     setTimeout(() => {
-      img.src = "гуль.png";
+      img.src = "images/гуль.png";
       img.style.opacity = "1";
     }, 300);
   });

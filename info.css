@@ -1,0 +1,143 @@
+/* Базовые стили */
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+background: #1a1a1a; /* постапокалиптический тёмный фон */
+color: #f0f0f0;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+}
+
+/* Контейнер */
+.container {
+width: 90%;
+max-width: 1000px;
+margin: 0 auto;
+}
+
+/* Шапка */
+header {
+background: #003366; /* синий Vault-Tec */
+padding: 1rem 0;
+}
+
+header h1 {
+text-align: center;
+font-size: 2rem;
+color: #ffcc00; /* жёлтый акцент */
+letter-spacing: 2px;
+}
+
+
+
+/* Навигация */
+.navigation {
+background: #002244; /* тёмно-синий */
+padding: 0.5rem 0;
+border-bottom: 2px solid #ffcc00;
+}
+
+.nav-list {
+list-style: none;
+display: flex;
+justify-content: center;
+gap: 2rem;
+}
+
+.nav-link {
+color: #f0f0f0;
+text-decoration: none;
+font-weight: 600;
+font-size: 1.1rem;
+padding: 0.5rem 1rem;
+border-radius: 20px;
+transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+color: #ffcc00;
+border: 2px solid #ffcc00;
+background: rgba(255, 204, 0, 0.1);
+}
+
+.nav-link.active {
+background: #ffcc00;
+color: #003366;
+}
+
+img {
+max-width: 30%;
+float: left;
+margin-right: 2.5rem;
+padding 2rem;
+height: auto;
+text-align: left;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+transition: transform 0.5s ease;
+transition: opacity 0.3s ease;
+}
+
+img:hover {
+transform: scale(1.05);
+}
+
+article h3{
+text-align: center;
+font-size: 1.5rem;
+color: #ffcc00; /* жёлтый акцент */
+}
+
+article p{
+text-align: rigth;
+font-size: 1rem;
+color: #ffffff; /* жёлтый акцент */
+}
+
+
+
+/* Секция ссылок */
+.links {
+text-align: center;
+margin: 2rem 0;
+}
+
+.external-link {
+color: #ffcc00;
+font-size: 1.4rem;
+text-decoration: none;
+font-weight: bold;
+transition: color 0.3s ease;
+}
+
+.external-link:hover {
+color: #f0f0f0;
+}
+
+/* Футер */
+footer {
+background: #002244;
+padding: 1rem 0;
+margin-top: auto;
+border-top: 2px solid #ffcc00;
+}
+
+.footer-columns {
+display: flex;
+justify-content: space-between;
+text-align: center;
+}
+
+.footer-columns .column {
+flex: 1;
+font-size: 0.9rem;
+color: #ffcc00;
+}
+
