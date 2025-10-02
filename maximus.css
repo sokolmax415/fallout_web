@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    background-color: #f0ede4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.navigation {
+    background-color: #003366;
+    padding: 1rem 0;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav-link {
+    color: #f8f8f8;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.nav-link:hover {
+    background-color: #f1c40f;
+    color: #003366;
+    border-color: #f1c40f;
+}
+
+.nav-link.active {
+    background-color: #f1c40f;
+    color: #003366;
+    border-color: #f1c40f;
+}
+
+
+header .container {
+    text-align: center;
+    padding: 40px 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #003366;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 40px 0;
+    gap: 20px;
+}
+
+.features_item {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    flex: 1 1 250px;
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, background-color 0.3s;
+    border-top: 5px solid #f1c40f;
+}
+
+.features_item:hover {
+    transform: translateY(-5px);
+    background-color: #fdf7e3;
+}
+
+.features_icon {
+    width: 200px;
+    height: 227px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.features_title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #003366;
+}
+
+.features_text {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+
+.traits {
+    margin: 40px auto;
+    max-width: 600px;
+    text-align: center;
+    background-color: #003366;
+    color: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.traits h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #f1c40f;
+}
+
+.traits ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.traits li {
+    font-size: 1.2rem;
+    background-color: #f8f8f8;
+    color: #003366;
+    margin: 10px 0;
+    padding: 12px 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.traits li:hover {
+    background-color: #f1c40f;
+    color: #003366;
+    transform: translateX(5px);
+}
+
+
+.extra-info {
+    max-width: 700px;
+    margin: 40px auto;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.extra-info h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+
+.btn {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #005fa3;
+}
+
+
+.hidden {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.show {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: 15px;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .nav-link {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features_item {
+        max-width: 90%;
+    }
+
+    .features_icon {
+        width: 100%;
+        height: auto;
+    }
+
+    .traits {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .traits h2 {
+        font-size: 1.5rem;
+    }
+
+    .traits li {
+        font-size: 1rem;
+    }
+
+    .extra-info {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+
+
+@media (min-width: 1024px) {
+    .features {
+        justify-content: space-between;
+    }
+
+    .features_item {
+        flex: 1 1 30%;
+        max-width: 30%;
+    }
+
+    .features_icon {
+        width: 200px;
+        height: 227px;
+    }
+}
