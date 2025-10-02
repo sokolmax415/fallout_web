@@ -201,7 +201,24 @@ header h1 {
     margin-top: 15px;
 }
 
+footer {
+    background: #002244;
+    padding: 1rem 0;
+    margin-top: auto;
+    border-top: 2px solid #ffcc00;
+}
 
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footer-columns .column {
+    flex: 1;
+    font-size: 0.9rem;
+    color: #ffcc00;
+}
 
 
 @media (max-width: 768px) {
@@ -260,6 +277,10 @@ header h1 {
 
     .btn {
         width: 100%;
+    }
+    .footer-columns {
+        flex-direction: column;
+        gap: 1rem;
     }
 }
 
