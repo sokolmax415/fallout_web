@@ -45,7 +45,7 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  font-size: 1.2vm; /* исправлено */
+  font-size: 3rem;
   margin: 0 1rem;
 }
 
@@ -61,9 +61,9 @@ a:hover {
 
 img {
   display: block;
-  float: left; /* картинка слева */
-  max-width: 3vm;
-  margin-left: 0rem; /* маленький зазор от левого края */
+  float: left;
+  max-width: 50%;
+  margin-left: 0rem;
   margin-right: 5rem;
   border-radius: 10px;
   transition: transform 0.5s ease;
@@ -127,9 +127,15 @@ img:hover {
   }
 
   img {
-    margin-left: 1rem;
+    margin-left: 2rem;
     margin-right: 2rem;
-    max-width: 50%;
+    float: none;
+    align-text: center;
+    max-width: 70%;
+  }
+
+  nav ul li {
+    font-size: 1.5rem;
   }
 
   .nav-list {
@@ -151,7 +157,4 @@ img:hover {
     max-width: 900px;
     padding: 1rem;
   }
-
 }
-
-
