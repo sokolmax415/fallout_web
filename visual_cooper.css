@@ -129,7 +129,7 @@ img:hover {
   img {
     margin-left: 1rem;
     margin-right: 2rem;
-    max-width: 400px;
+    max-width: 50%;
   }
 
   .nav-list {
@@ -153,4 +153,5 @@ img:hover {
   }
 
 }
+
 
