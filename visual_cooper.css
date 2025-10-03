@@ -24,7 +24,7 @@ footer {
   background: #333;
   padding: 1rem;
   text-align: center;
-  height: 7rem;
+  height: 10rem;
 }
 
 .footer-columns {
@@ -174,3 +174,4 @@ img:hover {
   }
 
 }
+
