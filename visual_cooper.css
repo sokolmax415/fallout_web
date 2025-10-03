@@ -150,7 +150,6 @@ img:hover {
 
   .footer-columns {
         flex-direction: column;
-        gap: 1rem;
     }
 
   .nav-list {
@@ -174,6 +173,7 @@ img:hover {
   }
 
 }
+
 
 
 
