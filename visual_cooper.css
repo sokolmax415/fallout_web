@@ -24,19 +24,18 @@ footer {
   background: #333;
   padding: 1rem;
   text-align: center;
-  height: 15rem;
 }
 
 .footer-columns {
-display: flex;
-justify-content: space-between;
-text-align: center;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .footer-columns .column {
-flex: 1;
-font-size: 0.9rem;
-color: #ffcc00;
+  flex: 1;
+  font-size: 0.9rem;
+  color: #ffcc00;
 }
 
 h1, h2{
@@ -180,6 +179,7 @@ img:hover {
   }
 
 }
+
 
 
 
